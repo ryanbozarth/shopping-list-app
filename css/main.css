@@ -1,0 +1,55 @@
+
+
+
+.container {
+  width: 1170px;
+}
+
+body {
+	background-color: #FAFAFA;
+}
+
+#nav-bar {
+	width: 100%;
+	height: 64px;
+	background-color: #F5F5F5;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	/* I like the way this looks, but not sure why you need all of it */
+}
+
+.menu-container {
+	width: 48px;
+	height: 48px;
+	background: transparent;
+	cursor: pointer;
+	text-align: center;
+	margin: 10px 12px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	line-height: 50px;
+	font-size: 26px; 
+	/* borrowed from another site, unclear why it works */
+}
+
+.menu-container .material-icons{
+	color: #767777;
+}
+
+.nav-title {
+	position: relative;
+	display: block;
+}
+
+.nav-title h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #000;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+* {
+	outline: solid 1px red;
+	box-sizing: border-box;
+}
