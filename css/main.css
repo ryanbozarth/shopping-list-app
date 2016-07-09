@@ -8,6 +8,13 @@ div {
 body {
 	background-color: #FAFAFA;
 	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+  	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 .row {
@@ -109,8 +116,6 @@ a:hover, a:hover {
 	position: absolute;
 	left: 60px;
 	top: 10px;
-
-
 }
 
 .nav-title h1 {
@@ -156,7 +161,6 @@ a:hover, a:hover {
 	display: flex;
 	flex-direction: column;
 	margin: 100px;
-  	flex-grow: 1;
   	padding: 0;
   	width: calc(100% - 200px);
   	background-color: white;
@@ -165,15 +169,81 @@ a:hover, a:hover {
 
 .modal-card-text {
 	margin: 40px;
-	flex-grow: 1;
-	padding-bottom: 0;
+	padding: 0;
 	width: calc(100% - 200px);
+	flex-grow: 1;
 
+}
+
+.circle-container {
+	width: calc(16.667% - 16px);
+	margin: 0;
+	float:left; /* temporary hack for positioning */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.modal-card-text .circle {
+	width: 64px;
+	height: 64px; 
+	border-radius: 32px;
+	margin: 8px 0; /* had to increase margin because of vertical margin collapse, couldn't get overflow:hidden to work; */
+	background-color: #fff;
+	border: 8px solid rgb(103,58,183);
+	margin: 0;
+}
+
+.modal-card-text .circle-done {
+	width: 64px;
+	height: 64px; 
+	border-radius: 32px;
+	margin: 16px 0; /* had to increase margin because of vertical margin collapse, couldn't get overflow:hidden to work; */
+	background-color: rgb(103,58,183);
+	margin: 0;
+}
+
+.circle-done .material-icons{
+	color: white;
+	font-size: 54px;
+	font-weight: 700;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.card-text {
+	margin: 0;
+	flex-grow: 1;
+  	flex-shrink: 0;
+  	width: calc(83.33% - 16px);
+}
+
+/*
+.card-text:not(:last-child) {
+	width: 83.33%;
+	margin: 0;
+	border-bottom: 1px solid rgba(0,0,0,.13);
+}
+
+*/
+.text-done {
+	text-decoration: line-through;
+	/* text-decoration-color: rgb(255,64,129); */
 }
 
 h4, h5, p {
 	color: #616161;
 	padding: 0;
+}
+
+h5 {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: .02em;
+	margin-bottom: 10px;
 }
 
 h4 {
@@ -183,28 +253,13 @@ h4 {
 	line-height: 32px;
 	font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 400;
-}
 
-.modal-card-text .circle {
-	width: 64px;
-	height: 64px; 
-	border-radius: 32px;
-	margin: 16px 0; /* had to increase margin because of vertical margin collapse, couldn't get overflow:hidden to work; */
-	background-color: rgb(103,58,183);
-}
-
-h5 {
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 1;
-	letter-spacing: .02;
-	margin-bottom: 10px;
 }
 
 p {
 	font-size: 15px;
 	line-height: 1.4;
-	letter-spacing: .02;
+	letter-spacing: .02em;
 	margin-top: 5px;
 }
 
@@ -212,7 +267,6 @@ p {
 
 * {
 	outline: solid 1px red;
-	box-sizing: border-box;
 }
 
 .body-stuff {
