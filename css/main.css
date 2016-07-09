@@ -1,5 +1,13 @@
+
+/* Global Styles */
+
 div {
 	display: block;
+}
+
+body {
+	background-color: #FAFAFA;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
 .row {
@@ -8,9 +16,11 @@ div {
 	background-color: #673AB7;
 }
 
+/* Layout Styles */
+
 header {
 	width: 100%;
-	height: 250px;
+	height: 264px;
 	background-color: #673AB7;
 	border: none;
 	top: 0;
@@ -32,28 +42,51 @@ header h1 {
 .dark-bottom {
 	background-color: rgb(81,45,168);
 	width: 100%;
-	height: 50px;
+	height: 64px;
 	z-index: 100;
 }
 
-.container {
-  width: 1170px;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-body {
-	background-color: #FAFAFA;
+li {
+	display: inline;
+	line-height: 64px;
+	margin-left: 18px;
 }
 
-#nav-bar {
+li a {
+	color: rgba(255,255,255,.6);
+	text-align: center;
+	padding: 0 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+
+}
+
+a:hover, a:hover { 
+	color: white;
+}
+
+/*
+
+.tab-active {
+	height: 4px;
 	width: 100%;
-	height: 64px;
-	background-color: #F5F5F5;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-	top: 0;
+	display: block;
+	content " ";
+	bottom: 0;
 	left: 0;
-	position: relative;
-	/* I like the way this looks, but not sure why you need all of it */
+	position: absolute;
+	background-color: white;
 }
+*/
 
 .menu-container {
 	width: 48px;
@@ -88,14 +121,6 @@ body {
 	vertical-align: middle;
 }
 
-.body-stuff {
-	height: 50px;
-	width: 500px;
-	background-color: red;
-	position: relative;
-	z-index: 10000;
-}
-
 .button-fab  {
     border-radius: 50%;
     font-size: 24px;
@@ -112,7 +137,7 @@ body {
 	border: 0;
 	position: absolute;
     right: 40px;
-    top: 220px;
+    top: 235px;
 }
 
 .button-fab .material-icons {
@@ -146,6 +171,11 @@ body {
 
 }
 
+h4, h5, p {
+	color: #616161;
+	padding: 0;
+}
+
 h4 {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -153,9 +183,6 @@ h4 {
 	line-height: 32px;
 	font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 400;
-    color: #616161;
-    padding: 0;
-    display: block;
 }
 
 .modal-card-text .circle {
@@ -166,11 +193,47 @@ h4 {
 	background-color: rgb(103,58,183);
 }
 
+h5 {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: .02;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.4;
+	letter-spacing: .02;
+	margin-top: 5px;
+}
 
 /*
 
 * {
 	outline: solid 1px red;
 	box-sizing: border-box;
+}
+
+.body-stuff {
+	height: 50px;
+	width: 500px;
+	background-color: red;
+	position: relative;
+	z-index: 10000;
+}
+
+.container {
+  width: 1170px;
+}
+
+#nav-bar {
+	width: 100%;
+	height: 64px;
+	background-color: #F5F5F5;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	top: 0;
+	left: 0;
+	position: relative;
 }
 
