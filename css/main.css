@@ -194,6 +194,7 @@ a:hover, a:hover {
 	background-color: #fff;
 	border: 8px solid rgb(103,58,183);
 	margin: 0;
+	cursor: pointer;
 }
 
 .modal-card-text .circle-done {
@@ -226,8 +227,8 @@ a:hover, a:hover {
 	margin: 0;
 	border-bottom: 1px solid rgba(0,0,0,.13);
 }
-
 */
+
 .text-done {
 	text-decoration: line-through;
 	/* text-decoration-color: rgb(255,64,129); */
@@ -261,6 +262,11 @@ p {
 	line-height: 1.4;
 	letter-spacing: .02em;
 	margin-top: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+
+}
 }
 
 /*
