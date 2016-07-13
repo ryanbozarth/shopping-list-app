@@ -17,13 +17,7 @@ body {
 	box-sizing: border-box;
 }
 
-.row {
-	height: 64px;
-	width: 100%;
-	background-color: #673AB7;
-}
-
-/* Layout Styles */
+/* Header Styles */
 
 header {
 	width: 100%;
@@ -32,11 +26,9 @@ header {
 	border: none;
 	top: 0;
 	left: 0;
-	/* why do I have to make it an absolute position to get it to the top */
 }
 
 header h1 {
-	font-family: "Roboto","Helvetica","Arial",sans-serif;
 	font-weight: 400;
 	color: #fff;
 	font-size: 34px;
@@ -60,13 +52,17 @@ ul {
 	overflow: hidden;
 }
 
-li {
+.dark-bottom li {
 	display: inline;
 	line-height: 64px;
 	margin-left: 18px;
 }
 
-li a {
+.dark-bottom li:first-child {
+	margin-left: 26px;
+}
+
+.dark-bottom li a {
 	color: rgba(255,255,255,.6);
 	text-align: center;
 	padding: 0 12px;
@@ -74,15 +70,13 @@ li a {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 14px;
-
 }
 
-a:hover, a:hover { 
+.dark-bottom li a:hover { 
 	color: white;
 }
 
 /*
-
 .tab-active {
 	height: 4px;
 	width: 100%;
@@ -94,37 +88,6 @@ a:hover, a:hover {
 	background-color: white;
 }
 */
-
-.menu-container {
-	width: 48px;
-	height: 48px;
-	background: transparent;
-	cursor: pointer;
-	text-align: center;
-	margin: 10px 12px;
-	line-height: 50px;
-	font-size: 26px; 
-	position: absolute;
-	/* borrowed from another site, unclear why it works */
-}
-
-.menu-container .material-icons{
-	color: #767777;
-}
-
-.nav-title {
-	position: absolute;
-	left: 60px;
-	top: 10px;
-}
-
-.nav-title h1 {
-	font-family: "Roboto","Helvetica","Arial",sans-serif;
-	font-weight: 500;
-	color: #000;
-	font-size: 20px;
-	vertical-align: middle;
-}
 
 .button-fab  {
     border-radius: 50%;
@@ -149,12 +112,12 @@ a:hover, a:hover {
 	position: absolute;
 	top: 16px;
 	left: 16px;
-
 }
 
+
+/* Body Styles */
+
 .modal-card {
-	font-size: 16px;
-	font-weight: 400;
 	z-index: 1;
 	min-height: 200px;
 	height: auto;
@@ -171,19 +134,76 @@ a:hover, a:hover {
 	margin: 40px;
 	padding: 0;
 	width: calc(100% - 200px);
-	flex-grow: 1;
-
 }
 
+.search-form {
+	margin-bottom: 30px;
+}
+
+#textbox {
+	border: none;
+	border-bottom: solid 2px  #673AB7;
+}
+
+label {
+	display: block;
+	color: #673AB7;
+	font-size: 13px;
+	padding-bottom: 8px;
+}
+
+::-webkit-input-placeholder {
+   font-size: 14px;
+}
+
+:-ms-input-placeholder {  
+	font-size: 14px;
+}
+
+input:focus {
+	outline:none;
+}
+
+.add-btn {
+    border-radius: 50%;
+    font-size: 18px;
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    background-color: rgb(255,64,129);
+    color: #fff;
+    z-index: 10000;
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+	cursor: pointer;
+	text-align: center;
+	border: 0;	
+	margin-left: 10px;
+	position: absolute;
+
+}
+.add-btn .material-icons {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+}
+
+/*
 .circle-container {
 	width: calc(16.667% - 16px);
 	margin: 0;
-	float:left; /* temporary hack for positioning */
+	float:left;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	flex-grow: 0;
 	flex-shrink: 1;
+}
+*/
+
+.entire-list-item {
+	display: flex;
+	margin-bottom: 20px;
 }
 
 .modal-card-text .circle {
@@ -206,19 +226,19 @@ a:hover, a:hover {
 	margin: 0;
 }
 
-.circle-done .material-icons{
+.entire-list-item .material-icons{
 	color: white;
 	font-size: 54px;
 	font-weight: 700;
-	margin-top: 5px;
-	margin-left: 5px;
+	margin-top: -2px;
+	margin-left: -2px;
 }
 
 .card-text {
 	margin: 0;
-	flex-grow: 1;
-  	flex-shrink: 0;
   	width: calc(83.33% - 16px);
+  	margin-left: 15px;
+  	margin-top: -4px;
 }
 
 /*
@@ -240,7 +260,7 @@ h4, h5, p {
 }
 
 h5 {
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 500;
 	line-height: 1;
 	letter-spacing: .02em;
@@ -257,16 +277,10 @@ h4 {
 
 }
 
-p {
-	font-size: 15px;
-	line-height: 1.4;
-	letter-spacing: .02em;
-	margin-top: 5px;
-}
 
 @media only screen and (max-width: 500px) {
 
-}
+
 }
 
 /*
@@ -274,6 +288,7 @@ p {
 * {
 	outline: solid 1px red;
 }
+
 
 .body-stuff {
 	height: 50px;

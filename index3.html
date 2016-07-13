@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="hero-block">
+		<h1>Shopping List App</h1>
+		<div class="dark-bottom">
+			<ul>
+			<li><a href="#" class="tab-active">Cold Brew</a></li>
+			<li><a href="#">Meat</a></li>
+			<li><a href="#">Vegetables</a></li>
+			<li><a href="#">Fruit</a></li>
+			<li><a href="#">Nuts</a></li>
+			</ul>
+		</div>
+		<nav>
+			<button class="button-fab">
+				<i class="material-icons">add</i>
+			</button>
+		</nav>
+	</header>
+	<div class="modal-card">
+		<div class="modal-card-text">
+			<form class="search-form">
+				<label for="text-label">Item</label>
+				<input type="text" name="enter-item" placeholder="Coffee Beans" id="textbox">
+				<button type="button" class="add-btn">
+					<i class="material-icons">add</i>
+				</button>
+			</form>
+			<ul class="shopping-list">
+				<li class="entire-list-item">
+					<div class="circle"></div>
+					<div class="card-text">
+						<h5>Lorem ipsum dolor sit amet</h5>
+					</div>
+				</li>
+				<li class="entire-list-item">
+					<div class="circle"></div>
+					<div class="card-text">
+						<h5>Lorem ipsum dolor sit amet</h5>
+					</div>
+				</li>
+				<li class="entire-list-item">
+					<div class="circle"></div>
+					<div class="card-text">
+						<h5>Lorem ipsum dolor sit amet</h5>
+					</div>
+				</li>
+				<li class="entire-list-item">
+					<div class="circle"></div>
+					<div class="card-text">
+						<h5>Lorem ipsum dolor sit amet</h5>
+					</div>
+				</li>
+				<li class="entire-list-item">
+					<div class="circle circle-done">
+						<i class="material-icons">done</i>
+					</div>
+					<div class="card-text text-done">
+						<h5>Lorem ipsum dolor sit amet</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
