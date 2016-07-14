@@ -153,40 +153,64 @@ label {
 }
 
 ::-webkit-input-placeholder {
-   font-size: 14px;
+   font-size: 15px;
 }
 
 :-ms-input-placeholder {  
-	font-size: 14px;
+	font-size: 15px;
 }
 
-input:focus {
+input:focus, button:focus{
 	outline:none;
 }
 
 .add-btn {
-    border-radius: 50%;
-    font-size: 18px;
-    height: 36px;
-    width: 36px;
-    padding: 0;
     background-color: rgb(255,64,129);
     color: #fff;
     z-index: 10000;
-    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 	cursor: pointer;
 	text-align: center;
 	border: 0;	
 	margin-left: 10px;
-	position: absolute;
-
+	position: relative;
+	top: -7px;
+  	border-radius: 2px;
+  	display: inline-block;
+  	height: 36px;
+  	line-height: 36px;
+  	outline: 0;
+  	padding: 0 1.5rem;
+  	text-transform: uppercase;
+  	vertical-align: middle;
+  	-webkit-tap-highlight-color: transparent;
 }
+
+.add-btn:hover {
+background-color: #FC6E9D;
+}
+
 .add-btn .material-icons {
 	position: absolute;
-	left: 6px;
-	top: 6px;
+	left: 16px;
+	top: 16px;
 }
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: all .3s ease-out;
+}
+
 
 /*
 .circle-container {
@@ -231,7 +255,7 @@ input:focus {
 	font-size: 54px;
 	font-weight: 700;
 	margin-top: -2px;
-	margin-left: -2px;
+	margin-left: -3px;
 }
 
 .card-text {
