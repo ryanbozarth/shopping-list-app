@@ -173,11 +173,11 @@ input:focus, button:focus{
 	border: 0;	
 	margin-left: 10px;
 	position: relative;
-	top: -7px;
+	top: -4px;
   	border-radius: 2px;
   	display: inline-block;
-  	height: 36px;
-  	line-height: 36px;
+  	height: 32px;
+  	line-height: 32px;
   	outline: 0;
   	padding: 0 1.5rem;
   	text-transform: uppercase;
@@ -195,22 +195,18 @@ background-color: #FC6E9D;
 	top: 16px;
 }
 
-.waves-effect {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
+.delete-btn {
+  border: none;
+  border-radius: 2px;
+  display: inline;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
   vertical-align: middle;
-  z-index: 1;
-  will-change: opacity, transform;
-  transition: all .3s ease-out;
+  -webkit-tap-highlight-color: transparent;
 }
-
 
 /*
 .circle-container {
@@ -307,8 +303,8 @@ h4 {
 
 }
 
-/*
 
+/*
 * {
 	outline: solid 1px red;
 }
