@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 
-$('.entire-list-item').on('click', function(){ 
+$('ul.shopping-list').on('click', '.entire-list-item', function(){ 
     	$(this).find("div.circle").toggleClass("circle-done");
     	$(this).find("div.card-text").toggleClass("text-done");
 });
@@ -10,7 +10,6 @@ $('.entire-list-item').on('click', function(){
   		event.preventDefault();
   		addItem();
 });
- 
 
 function addItem (){
 	var itemEntered = $("input#textbox").val();
@@ -18,7 +17,7 @@ function addItem (){
 };
 
 $(document).keydown(function( event ){
-		if (event.keyCode == 46){
+		if (event.keyCode == 9){
 		$('.circle-done').parent().remove();
 		}
 	});
