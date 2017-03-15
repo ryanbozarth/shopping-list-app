@@ -1,9 +1,0 @@
-## Project Notes
-- Use check circle font icon from google (https://design.google.com/icons/#ic_check_circle)
-
-## Reference Links
-- https://getmdl.io/templates/text-only/index.html
-- http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
-- https://getmdl.io/templates/android-dot-com/index.html
-- getmdl.io
-- 
